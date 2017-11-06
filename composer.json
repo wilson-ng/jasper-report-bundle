@@ -1,0 +1,36 @@
+{
+    "name": "wilson-ng/jasper-report-bundle",
+    "type": "symfony-bundle",
+    "description": "Jasper Report Rest Client Wrapper.",
+    "keywords": ["jasper", "report", "jasper-report", "bundle", "symfony"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wilson Ng",
+            "email": "frozalid.wilson@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "symfony/dependency-injection": "^2.7 || ^3.0",
+        "symfony/http-kernel": "^2.7 || ^3.0",
+        "symfony/config": "^2.7 || ^3.0",
+        "symfony/http-foundation": "^2.7 || ^3.0",
+        "jaspersoft/rest-client": "v2.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WilsonNg\\JasperReportBundle\\": "src/",
+            "WilsonNg\\JasperReportBundle\\Tests\\": "tests/"
+        },
+        "exclude-from-classmap": [
+            "tests/"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
